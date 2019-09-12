@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-size: 30px; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.calculator-wrap{
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.button-key:hover{ 
+  background-color:  #e4c8f3 ; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.calculator{
+  background-color:  grey; 
+  width: 400px; 
+  height: 450px; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+          "display-screen display-screen display-screen add-num"
+          "one two three subtract-num"
+          "four five six multiply-num"
+          "seven eight nine divide-num"
+          "all-clear number-zero equals decimal-point" ; 
+          grid-gap: .25em; 
+}
+
+.display-screen{
+  grid-area: display-screen;
+  background-color:  #c8f3e2 ;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  grid-template-areas: ". . num-a operator num-b . .";     */
+}
+
+/* .num-a{
+  grid-area: num-a; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.operator{
+  grid-area:operator; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+.num-b{
+  grid-area: num-b; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
+
+
+
+
+.one{
+  grid-area: one;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:   #68c3e8 ;  
+}
+
+
+.two{
+  grid-area: two;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.three{
+  grid-area: three;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+  
+}
+
+
+.four{
+  grid-area: four;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.five{
+  grid-area: five;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.six{
+  grid-area: six;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.seven{
+  grid-area: seven;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.eight{
+  grid-area: eight;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.nine{
+  grid-area: nine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.number-zero{
+  grid-area: number-zero;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #68c3e8 ; 
+}
+
+.add-num{
+  grid-area: add-num;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff59f;
+}
+
+.subtract-num{
+  grid-area: subtract-num;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff59f; 
+}
+
+
+.multiply-num{
+  grid-area: multiply-num;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff59f;
+}
+
+.divide-num{
+  grid-area: divide-num;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff59f;
+}
+
+.decimal-point{
+  grid-area: decimal-point; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff59f;
+}
+
+.equals{
+  grid-area: equals; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff59f;
+}
+
+.all-clear{
+  font-size: 20px; 
+  grid-area: all-clear;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff59f;
+}
